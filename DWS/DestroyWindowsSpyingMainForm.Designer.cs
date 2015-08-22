@@ -91,6 +91,8 @@
             this.richTextBoxReadMeEn = new System.Windows.Forms.RichTextBox();
             this.tabPageReadMeRu = new System.Windows.Forms.TabPage();
             this.richTextBoxReadMeRU = new System.Windows.Forms.RichTextBox();
+            this.tabPageReadMeES = new System.Windows.Forms.TabPage();
+            this.tabControlReadMERUES = new System.Windows.Forms.RichTextBox();
             this.FormTabsControl.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.tabPageSettings.SuspendLayout();
@@ -104,6 +106,7 @@
             this.tabControlReadMERUEN.SuspendLayout();
             this.tabPageReadMeEn.SuspendLayout();
             this.tabPageReadMeRu.SuspendLayout();
+            this.tabPageReadMeES.SuspendLayout();
             this.SuspendLayout();
             // 
             // FormTabsControl
@@ -572,7 +575,8 @@
             this.comboBoxLanguageSelect.Items.AddRange(new object[] {
             "en-US | English",
             "ru-RU | Русский",
-            "fr-FR | French"});
+            "fr-FR | French",
+            "es-ES|Spanish"});
             this.comboBoxLanguageSelect.Location = new System.Drawing.Point(6, 20);
             this.comboBoxLanguageSelect.Name = "comboBoxLanguageSelect";
             this.comboBoxLanguageSelect.Size = new System.Drawing.Size(202, 21);
@@ -889,6 +893,7 @@
             // 
             this.tabControlReadMERUEN.Controls.Add(this.tabPageReadMeEn);
             this.tabControlReadMERUEN.Controls.Add(this.tabPageReadMeRu);
+            this.tabControlReadMERUEN.Controls.Add(this.tabPageReadMeES);
             this.tabControlReadMERUEN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlReadMERUEN.Location = new System.Drawing.Point(0, 0);
             this.tabControlReadMERUEN.Name = "tabControlReadMERUEN";
@@ -942,6 +947,28 @@
             this.richTextBoxReadMeRU.TabIndex = 1;
             this.richTextBoxReadMeRU.Text = resources.GetString("richTextBoxReadMeRU.Text");
             // 
+            // tabPageReadMeES
+            // 
+            this.tabPageReadMeES.Controls.Add(this.tabControlReadMERUES);
+            this.tabPageReadMeES.Location = new System.Drawing.Point(4, 22);
+            this.tabPageReadMeES.Name = "tabPageReadMeES";
+            this.tabPageReadMeES.Size = new System.Drawing.Size(437, 374);
+            this.tabPageReadMeES.TabIndex = 2;
+            this.tabPageReadMeES.Text = "Léeme (ES)";
+            this.tabPageReadMeES.UseVisualStyleBackColor = true;
+            // 
+            // tabControlReadMERUES
+            // 
+            this.tabControlReadMERUES.BackColor = System.Drawing.Color.White;
+            this.tabControlReadMERUES.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tabControlReadMERUES.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlReadMERUES.Location = new System.Drawing.Point(0, 0);
+            this.tabControlReadMERUES.Name = "tabControlReadMERUES";
+            this.tabControlReadMERUES.ReadOnly = true;
+            this.tabControlReadMERUES.Size = new System.Drawing.Size(437, 374);
+            this.tabControlReadMERUES.TabIndex = 1;
+            this.tabControlReadMERUES.Text = resources.GetString("tabControlReadMERUES.Text");
+            // 
             // DestroyWindowsSpyingMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -974,6 +1001,7 @@
             this.tabControlReadMERUEN.ResumeLayout(false);
             this.tabPageReadMeEn.ResumeLayout(false);
             this.tabPageReadMeRu.ResumeLayout(false);
+            this.tabPageReadMeES.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1042,6 +1070,8 @@
         private System.Windows.Forms.LinkLabel linkLabelSourceCode;
         private System.Windows.Forms.Button btnReportABug;
         private System.Windows.Forms.Button btnRemoveOldFirewallRules;
+        private System.Windows.Forms.TabPage tabPageReadMeES;
+        private System.Windows.Forms.RichTextBox tabControlReadMERUES;
     }
 }
 

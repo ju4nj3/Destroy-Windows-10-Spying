@@ -108,6 +108,11 @@ namespace DWS_Lite
                 rm = lang.fr_FR.ResourceManager;
                 comboBoxLanguageSelect.Text = "fr-FR | French";
             }
+            else if (currentlang.IndexOf("es") > -1)
+            {
+                rm = lang.es_ES.ResourceManager;
+                comboBoxLanguageSelect.Text = "es-ES | Spanish";
+            }
             else
             {
                 rm = lang.en_US.ResourceManager;
@@ -982,6 +987,11 @@ namespace DWS_Lite
                 rm = lang.fr_FR.ResourceManager;
                 ChangeLanguage();
             }
+            else if (comboBoxLanguageSelect.Text.Split('|')[0].Replace(" ", "") == "es-ES")
+            {
+                rm = lang.es_ES.ResourceManager;
+                ChangeLanguage();
+            }
             if (comboBoxLanguageSelect.Text.Split('|')[0].Replace(" ", "") == "en-US")
             {
                 rm = lang.en_US.ResourceManager;
@@ -1006,6 +1016,11 @@ namespace DWS_Lite
         private void btnReportABug_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/Nummer/Destroy-Windows-10-Spying/issues/new");
+        }
+
+        private void tabControlReadMERUES_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
